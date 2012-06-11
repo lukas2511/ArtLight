@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ArtLight' target in the 'ArtLight' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

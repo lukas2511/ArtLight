@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD899FDA158588EE001BF33C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD899FD9158588EE001BF33C /* Cocoa.framework */; };
+		FD899FE4158588EE001BF33C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD899FE2158588EE001BF33C /* InfoPlist.strings */; };
+		FD899FE6158588EE001BF33C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD899FE5158588EE001BF33C /* main.m */; };
+		FD899FEA158588EE001BF33C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD899FE8158588EE001BF33C /* Credits.rtf */; };
+		FD899FF0158588EE001BF33C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD899FEE158588EE001BF33C /* MainMenu.xib */; };
+		FD899FF3158588EE001BF33C /* ArtLight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD899FF1158588EE001BF33C /* ArtLight.xcdatamodeld */; };
+		FD899FFB158588EE001BF33C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD899FFA158588EE001BF33C /* SenTestingKit.framework */; };
+		FD899FFC158588EE001BF33C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD899FD9158588EE001BF33C /* Cocoa.framework */; };
+		FD89A004158588EF001BF33C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD89A002158588EF001BF33C /* InfoPlist.strings */; };
+		FD89A007158588EF001BF33C /* ArtLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD89A006158588EF001BF33C /* ArtLightTests.m */; };
+		FD89A01F158588FB001BF33C /* artnet.c in Sources */ = {isa = PBXBuildFile; fileRef = FD89A012158588FB001BF33C /* artnet.c */; };
+		FD89A020158588FB001BF33C /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD89A016158588FB001BF33C /* misc.c */; };
+		FD89A021158588FB001BF33C /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = FD89A018158588FB001BF33C /* network.c */; };
+		FD89A022158588FB001BF33C /* receive.c in Sources */ = {isa = PBXBuildFile; fileRef = FD89A01B158588FB001BF33C /* receive.c */; };
+		FD89A023158588FB001BF33C /* tod.c in Sources */ = {isa = PBXBuildFile; fileRef = FD89A01C158588FB001BF33C /* tod.c */; };
+		FD89A024158588FB001BF33C /* transmit.c in Sources */ = {isa = PBXBuildFile; fileRef = FD89A01E158588FB001BF33C /* transmit.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD899FFD158588EE001BF33C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD899FCC158588EE001BF33C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD899FD4158588EE001BF33C;
+			remoteInfo = ArtLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD899FD5158588EE001BF33C /* ArtLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD899FD9158588EE001BF33C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FD899FDC158588EE001BF33C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FD899FDD158588EE001BF33C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FD899FDE158588EE001BF33C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD899FE1158588EE001BF33C /* ArtLight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArtLight-Info.plist"; sourceTree = "<group>"; };
+		FD899FE3158588EE001BF33C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD899FE5158588EE001BF33C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD899FE7158588EE001BF33C /* ArtLight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArtLight-Prefix.pch"; sourceTree = "<group>"; };
+		FD899FE9158588EE001BF33C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FD899FEF158588EE001BF33C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FD899FF2158588EE001BF33C /* ArtLight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArtLight.xcdatamodel; sourceTree = "<group>"; };
+		FD899FF9158588EE001BF33C /* ArtLightTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtLightTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD899FFA158588EE001BF33C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD89A001158588EE001BF33C /* ArtLightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArtLightTests-Info.plist"; sourceTree = "<group>"; };
+		FD89A003158588EF001BF33C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD89A005158588EF001BF33C /* ArtLightTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtLightTests.h; sourceTree = "<group>"; };
+		FD89A006158588EF001BF33C /* ArtLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtLightTests.m; sourceTree = "<group>"; };
+		FD89A012158588FB001BF33C /* artnet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = artnet.c; sourceTree = "<group>"; };
+		FD89A013158588FB001BF33C /* artnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = artnet.h; sourceTree = "<group>"; };
+		FD89A014158588FB001BF33C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		FD89A015158588FB001BF33C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		FD89A016158588FB001BF33C /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		FD89A017158588FB001BF33C /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		FD89A018158588FB001BF33C /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
+		FD89A019158588FB001BF33C /* packets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packets.h; sourceTree = "<group>"; };
+		FD89A01A158588FB001BF33C /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		FD89A01B158588FB001BF33C /* receive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = receive.c; sourceTree = "<group>"; };
+		FD89A01C158588FB001BF33C /* tod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tod.c; sourceTree = "<group>"; };
+		FD89A01D158588FB001BF33C /* tod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tod.h; sourceTree = "<group>"; };
+		FD89A01E158588FB001BF33C /* transmit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transmit.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD899FD2158588EE001BF33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD899FDA158588EE001BF33C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD899FF5158588EE001BF33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD899FFB158588EE001BF33C /* SenTestingKit.framework in Frameworks */,
+				FD899FFC158588EE001BF33C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD899FCA158588EE001BF33C = {
+			isa = PBXGroup;
+			children = (
+				FD899FDF158588EE001BF33C /* ArtLight */,
+				FD899FFF158588EE001BF33C /* ArtLightTests */,
+				FD899FD8158588EE001BF33C /* Frameworks */,
+				FD899FD6158588EE001BF33C /* Products */,
+				FD89A010158588FB001BF33C /* Vendor */,
+			);
+			sourceTree = "<group>";
+		};
+		FD899FD6158588EE001BF33C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD899FD5158588EE001BF33C /* ArtLight.app */,
+				FD899FF9158588EE001BF33C /* ArtLightTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD899FD8158588EE001BF33C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD899FD9158588EE001BF33C /* Cocoa.framework */,
+				FD899FFA158588EE001BF33C /* SenTestingKit.framework */,
+				FD899FDB158588EE001BF33C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD899FDB158588EE001BF33C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD899FDC158588EE001BF33C /* AppKit.framework */,
+				FD899FDD158588EE001BF33C /* CoreData.framework */,
+				FD899FDE158588EE001BF33C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FD899FDF158588EE001BF33C /* ArtLight */ = {
+			isa = PBXGroup;
+			children = (
+				FD899FEE158588EE001BF33C /* MainMenu.xib */,
+				FD899FF1158588EE001BF33C /* ArtLight.xcdatamodeld */,
+				FD899FE0158588EE001BF33C /* Supporting Files */,
+			);
+			path = ArtLight;
+			sourceTree = "<group>";
+		};
+		FD899FE0158588EE001BF33C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD899FE1158588EE001BF33C /* ArtLight-Info.plist */,
+				FD899FE2158588EE001BF33C /* InfoPlist.strings */,
+				FD899FE5158588EE001BF33C /* main.m */,
+				FD899FE7158588EE001BF33C /* ArtLight-Prefix.pch */,
+				FD899FE8158588EE001BF33C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD899FFF158588EE001BF33C /* ArtLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD89A005158588EF001BF33C /* ArtLightTests.h */,
+				FD89A006158588EF001BF33C /* ArtLightTests.m */,
+				FD89A000158588EE001BF33C /* Supporting Files */,
+			);
+			path = ArtLightTests;
+			sourceTree = "<group>";
+		};
+		FD89A000158588EE001BF33C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD89A001158588EE001BF33C /* ArtLightTests-Info.plist */,
+				FD89A002158588EF001BF33C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD89A010158588FB001BF33C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				FD89A011158588FB001BF33C /* artnet */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		FD89A011158588FB001BF33C /* artnet */ = {
+			isa = PBXGroup;
+			children = (
+				FD89A012158588FB001BF33C /* artnet.c */,
+				FD89A013158588FB001BF33C /* artnet.h */,
+				FD89A014158588FB001BF33C /* common.h */,
+				FD89A015158588FB001BF33C /* config.h */,
+				FD89A016158588FB001BF33C /* misc.c */,
+				FD89A017158588FB001BF33C /* misc.h */,
+				FD89A018158588FB001BF33C /* network.c */,
+				FD89A019158588FB001BF33C /* packets.h */,
+				FD89A01A158588FB001BF33C /* private.h */,
+				FD89A01B158588FB001BF33C /* receive.c */,
+				FD89A01C158588FB001BF33C /* tod.c */,
+				FD89A01D158588FB001BF33C /* tod.h */,
+				FD89A01E158588FB001BF33C /* transmit.c */,
+			);
+			path = artnet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD899FD4158588EE001BF33C /* ArtLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD89A00A158588EF001BF33C /* Build configuration list for PBXNativeTarget "ArtLight" */;
+			buildPhases = (
+				FD899FD1158588EE001BF33C /* Sources */,
+				FD899FD2158588EE001BF33C /* Frameworks */,
+				FD899FD3158588EE001BF33C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtLight;
+			productName = ArtLight;
+			productReference = FD899FD5158588EE001BF33C /* ArtLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD899FF8158588EE001BF33C /* ArtLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD89A00D158588EF001BF33C /* Build configuration list for PBXNativeTarget "ArtLightTests" */;
+			buildPhases = (
+				FD899FF4158588EE001BF33C /* Sources */,
+				FD899FF5158588EE001BF33C /* Frameworks */,
+				FD899FF6158588EE001BF33C /* Resources */,
+				FD899FF7158588EE001BF33C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD899FFE158588EE001BF33C /* PBXTargetDependency */,
+			);
+			name = ArtLightTests;
+			productName = ArtLightTests;
+			productReference = FD899FF9158588EE001BF33C /* ArtLightTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD899FCC158588EE001BF33C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = FD899FCF158588EE001BF33C /* Build configuration list for PBXProject "ArtLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD899FCA158588EE001BF33C;
+			productRefGroup = FD899FD6158588EE001BF33C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD899FD4158588EE001BF33C /* ArtLight */,
+				FD899FF8158588EE001BF33C /* ArtLightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD899FD3158588EE001BF33C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD899FE4158588EE001BF33C /* InfoPlist.strings in Resources */,
+				FD899FEA158588EE001BF33C /* Credits.rtf in Resources */,
+				FD899FF0158588EE001BF33C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD899FF6158588EE001BF33C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD89A004158588EF001BF33C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD899FF7158588EE001BF33C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD899FD1158588EE001BF33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD899FE6158588EE001BF33C /* main.m in Sources */,
+				FD899FF3158588EE001BF33C /* ArtLight.xcdatamodeld in Sources */,
+				FD89A01F158588FB001BF33C /* artnet.c in Sources */,
+				FD89A020158588FB001BF33C /* misc.c in Sources */,
+				FD89A021158588FB001BF33C /* network.c in Sources */,
+				FD89A022158588FB001BF33C /* receive.c in Sources */,
+				FD89A023158588FB001BF33C /* tod.c in Sources */,
+				FD89A024158588FB001BF33C /* transmit.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD899FF4158588EE001BF33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD89A007158588EF001BF33C /* ArtLightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD899FFE158588EE001BF33C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD899FD4158588EE001BF33C /* ArtLight */;
+			targetProxy = FD899FFD158588EE001BF33C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD899FE2158588EE001BF33C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD899FE3158588EE001BF33C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD899FE8158588EE001BF33C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD899FE9158588EE001BF33C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FD899FEE158588EE001BF33C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD899FEF158588EE001BF33C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FD89A002158588EF001BF33C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD89A003158588EF001BF33C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD89A008158588EF001BF33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD89A009158588EF001BF33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FD89A00B158588EF001BF33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtLight/ArtLight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					HAVE_CONFIG_H,
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = Vendor;
+				INFOPLIST_FILE = "ArtLight/ArtLight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Vendor/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD89A00C158588EF001BF33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtLight/ArtLight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = Vendor;
+				INFOPLIST_FILE = "ArtLight/ArtLight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Vendor/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD89A00E158588EF001BF33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArtLight.app/Contents/MacOS/ArtLight";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtLight/ArtLight-Prefix.pch";
+				INFOPLIST_FILE = "ArtLightTests/ArtLightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FD89A00F158588EF001BF33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArtLight.app/Contents/MacOS/ArtLight";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtLight/ArtLight-Prefix.pch";
+				INFOPLIST_FILE = "ArtLightTests/ArtLightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD899FCF158588EE001BF33C /* Build configuration list for PBXProject "ArtLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD89A008158588EF001BF33C /* Debug */,
+				FD89A009158588EF001BF33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD89A00A158588EF001BF33C /* Build configuration list for PBXNativeTarget "ArtLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD89A00B158588EF001BF33C /* Debug */,
+				FD89A00C158588EF001BF33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD89A00D158588EF001BF33C /* Build configuration list for PBXNativeTarget "ArtLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD89A00E158588EF001BF33C /* Debug */,
+				FD89A00F158588EF001BF33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD899FF1158588EE001BF33C /* ArtLight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD899FF2158588EE001BF33C /* ArtLight.xcdatamodel */,
+			);
+			currentVersion = FD899FF2158588EE001BF33C /* ArtLight.xcdatamodel */;
+			path = ArtLight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD899FCC158588EE001BF33C /* Project object */;
+}
